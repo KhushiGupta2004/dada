@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Buttons in Rows and Columns</title>
+<style>
+    .button-grid {
+        display: grid;
+        grid-template-columns: repeat(7, auto); /* Adjust the number of columns */
+        gap: 10px; /* Adjust the gap between buttons */
+    }
+
+    button {
+        padding: 10px;
+    }
+</style>
+</head>
+<body>
+
+<div class="button-grid">
+    <button onclick="showAlert('Button 1')">WEDNESDAY</button>
+    <button onclick="showAlert('Button 2')">THURSDAY</button>
+    <button onclick="showAlert('Button 3')">FRIDAY</button>
+    <button onclick="showAlert('Button 4')">SATURDAY</button>
+    <button onclick="showAlert('Button 5')">SUNDAY</button>
+    <button onclick="showAlert('Button 6')">MONDAY</button>
+    <button onclick="showAlert('Button 7')">TUESDAY</button>
+    <button onclick="showAlert('Wrong choice:(')">1</button>
+    <button onclick="showAlert('Wrong choice:(')">2</button>
+    <button onclick="showAlert('Wrong choice:(')">3</button>
+    <button onclick="showAlert('Wrong choice:(')">4</button>
+    <button onclick="showAlert('Wrong choice:(')">5</button>
+    <button onclick="showAlert('Wrong choice:(')">6</button>
+    <button onclick="showAlert('Wrong choice:(')">7</button>
+    <button onclick="showAlert('Wrong choice:(')">8</button>
+    <button onclick="showAlert('Wrong choice:(')">9</button>
+    <button onclick="showAlert('Wrong choice:(')">10</button>
+    <button onclick="goToPage('MUMMA card.html')">11</button>
+    
+    <button onclick="showAlert('Wrong choice:(')">12</button>
+    <button onclick="showAlert('Wrong choice:(')">13</button>
+    <button onclick="showAlert('Wrong choice:(')">14</button>
+    <button onclick="showAlert('Wrong choice:(')">15</button>
+    <button onclick="showAlert('Wrong choice:(')">16</button>
+    <button onclick="showAlert('Wrong choice:(')">17</button>
+    <button onclick="showAlert('Wrong choice:(')">18</button>
+    <button onclick="showAlert('Wrong choice:(')">19</button>
+    <button onclick="showAlert('Wrong choice:(')">20</button>
+    <button onclick="showAlert('Wrong choice:(')">21</button>
+    <button onclick="showAlert('Wrong choice:(')">22</button>
+    <button onclick="showAlert('Wrong choice:(')">23</button>
+    <button onclick="showAlert('Wrong choice:(')">24</button>
+    <button onclick="showAlert('Wrong choice:(')">24</button>
+    <button onclick="showAlert('Wrong choice:(')">25</button>
+    <button onclick="showAlert('Wrong choice:(')">26</button>
+    <button onclick="showAlert('Wrong choice:(')">27</button>
+    <button onclick="showAlert('Wrong choice:(')">28</button>
+    <button onclick="showAlert('Wrong choice:(')">29</button>
+    <button onclick="showAlert('Wrong choice:(')">30</button>
+    <button onclick="showAlert('Wrong choice:(')">31</button>
+    
+</div>
+
+<script>
+function showAlert(buttonText) {
+    alert("You clicked " + buttonText);
+}
+
+function goToPage(page) {
+    window.location.href = page;
+}
+</script>
+
+</body>
+</html>

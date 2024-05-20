@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday</title>
+    <script>
+        function displayTime() {
+            var currentTime = new Date();
+            var hours = currentTime.getHours();
+            var minutes = currentTime.getMinutes();
+            var timeString = hours + ":" + (minutes < 10 ? "0" + minutes : minutes);
+            document.getElementById('current-time').textContent = timeString;
+        }
+        // Update time every second
+        setInterval(displayTime, 1000);
+    </script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        .container {
+            width: 600px;
+            margin: 50px auto;
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        p {
+            text-align: center;
+            color: #666;
+            margin-top: 20px;
+        }
+        .date {
+            text-align:end;
+            color: #333;
+            margin-top: 30px;
+        }
+        Body {
+             margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+         }
+         .envelope {
+            width: 200px;
+             height: 150px;
+            background-color: #fff;
+            border: 2px solid #000;
+            position: relative;
+            cursor: pointer;
+         }
+        .envelope:before {
+            content: '';
+         position: absolute;
+            top: -10px;
+            left: 50%;
+            width: 0;
+            height: 0;
+            border: 10px solid transparent;
+            border-bottom-color: #fff;
+            transform: translateX(-50%);
+         }
+        .envelope:after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            width: 0;
+            height: 0;
+            border: 10px solid transparent;
+            border-top-color: #fff;
+            transform: translateX(-50%);
+            }
+        .card {
+            width: 180px;
+            height: 130px;
+            background-color: #ffffff;
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            z-index: -1;
+            padding: 10px;
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out;
+            }
+        .card h1 {
+            font-family: Arial, sans-serif;
+            color: #333;
+            text-align: center;
+            margin-top: 20px;
+            }
+
+    </style>
+</head>
+<body>
+    <div class="envelope" onclick="revealCard()">
+        <p>click me</p>
+        <div class="card" id="card">
+            <div class="container">
+                <h1>HAPPYYYYYY BIRTHDAYYYYY GHUSROOOOO</h1>
+                <div class="date">Date: 11th May 2024</div>
+                <p>Time: <span id="current-time"></span></p>
+                <p>Happiest birthday meri Ghusrooo!!!!</p>
+                <p>Har saal card banti thi...toh socha iss baar kuch special tarha se banauuu....</p>
+                <p>Agle saal fir kisi special tarha se & on & on & on.....</p>
+                <p>Hope aapko kaafi pasand aaya hoga...kaafi mahnat lagi h(133 line code),lol</p>
+                <p>Yeh padne ke baad jyada miss mat karna muje...par thoda toh kar hii lena,hehe</p>
+                <p>Baaki mere hisse ki ek-ek kiss papa aur Sona ko kar dena....</p>
+                <h2>BYEEEE</h2>
+                <p>Did you like it?</p>
+                <button onclick="alert('LOVE YOUU<33')">YES</button>
+                <button onclick="alert('THANKSSS!!!')">NO</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        function revealCard() {
+          var card = document.getElementById('card');
+          card.style.opacity = '1';
+          card.style.zIndex = '1';
+        }
+      </script>
+      </body>
+      </html>
+      
+
+
